@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Satyanarayan Puja</title>
+
+<style>
+body{
+    margin:0;
+    font-family:"Georgia", serif;
+    background:radial-gradient(circle at top,#1c1b29,#0e0e16);
+    color:#f5e6c8;
+    text-align:center;
+    overflow-x:hidden;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:30px 20px 140px;
+}
+h1{color:#ffb703;}
+h2{color:#ffd166;margin-top:40px;}
+p{font-size:18px;line-height:1.7;margin:16px 0;}
+.divider{
+    width:90px;height:3px;background:#ffd166;
+    margin:30px auto;border-radius:5px;
+}
+
+/* 🪔 DIYAS */
+.diya-row{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin:20px 0;
+}
+.diya{
+    width:50px;height:30px;background:#8b4513;
+    border-radius:0 0 30px 30px;
+    position:relative;
+}
+.flame{
+    width:16px;height:16px;background:orange;
+    border-radius:50%;
+    position:absolute;top:-14px;left:50%;
+    transform:translateX(-50%);
+    box-shadow:0 0 15px orange;
+    animation:flicker 1s infinite alternate;
+}
+@keyframes flicker{
+    from{transform:translateX(-50%) scale(1);}
+    to{transform:translateX(-50%) scale(1.2);}
+}
+
+/* 🕉️ */
+.om{
+    font-size:64px;
+    color:#ffd166;
+    animation:glow 3s infinite;
+    margin:20px 0;
+}
+@keyframes glow{
+    0%{text-shadow:0 0 5px #ffd166;}
+    50%{text-shadow:0 0 30px #ffb703;}
+    100%{text-shadow:0 0 5px #ffd166;}
+}
+
+/* Buttons */
+.buttons{margin-top:30px;position:relative;height:120px;}
+button{
+    font-size:18px;padding:12px 28px;
+    border:none;border-radius:30px;
+    cursor:pointer;position:absolute;
+}
+.yes{
+    background:#ff8800;color:white;
+    left:50%;transform:translateX(-120%);
+}
+.no{
+    background:#777;color:#111;
+    left:50%;transform:translateX(20%);
+}
+
+/* Messages */
+.message{
+    display:none;margin-top:40px;padding:25px;
+    background:#1f1e2e;border-radius:14px;
+    box-shadow:0 0 20px rgba(255,183,3,0.4);
+}
+.emoji{font-size:30px;}
+
+/* 🌼 FLOWERS */
+.flower{
+    position:fixed;
+    top:-50px;
+    font-size:20px;
+    animation:fall linear infinite;
+}
+@keyframes fall{
+    to{transform:translateY(110vh) rotate(360deg);}
+}
+
+/* 👨‍👩‍👧‍👦 FAMILY */
+.family-box{
+    text-align:left;
+    max-width:520px;
+    margin:30px auto;
+    font-size:17px;
+    background:#1f1e2e;
+    padding:20px;
+    border-radius:12px;
+}
+.family-box span{
+    color:#ffd166;
+}
+</style>
+</head>
+
+<body>
+
+<!-- 🔔 Bell Sound -->
+<audio autoplay>
+  <source src="https://assets.mixkit.co/sfx/preview/mixkit-temple-bell-588.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<!-- 🪔 DIYAS -->
+<div class="diya-row">
+  <div class="diya"><div class="flame"></div></div>
+  <div class="diya"><div class="flame"></div></div>
+  <div class="diya"><div class="flame"></div></div>
+</div>
+
+<div class="om">🕉️</div>
+
+<h1>Satyanarayan Bhagwan Ji Ki Puja</h1>
+
+<p>
+Aaj aapke ghar Satyanarayan Bhagwan Ji ki<br>
+pavitra puja sampann ho rahi hai 🙏
+</p>
+
+<p>
+Is shubh avsar par<br>
+aap aur aapki poori family ko<br>
+hamari taraf se anek shubhkamnayein 🌸✨
+</p>
+
+<div class="divider"></div>
+
+<p>
+Bhagwan Satyanarayan Ji<br>
+aapke parivaar par apni kripa<br>
+sada banaye rakhein 🙏
+</p>
+
+<div class="divider"></div>
+
+<!-- 👨‍👩‍👧‍👦 FAMILY SECTION -->
+<h2>🌼 Puja Mein Shamil Parivaar 🌼</h2>
+
+<p>
+Is pavitra avsar par ek pyara sa<br>
+<b>anime-style parivaar</b> puja mein ek saath khada hai 🪔
+</p>
+
+<div class="family-box">
+<p>👫 <b>Husband & Wife</b><br>
+• <span contenteditable="true">Husband Name</span><br>
+• <span contenteditable="true">Wife Name</span></p>
+
+<p>👦👦👦 <b>Teen Yuva (21 yrs)</b><br>
+• <span contenteditable="true">Boy 1</span><br>
+• <span contenteditable="true">Boy 2</span><br>
+• <span contenteditable="true">Boy 3</span></p>
+
+<p>👧 <b>Yuvati (21 yrs)</b><br>
+• <span contenteditable="true">Girl Name</span></p>
+
+<p>❤️ <b>Uska Partner (25 yrs)</b><br>
+• <span contenteditable="true">Boyfriend Name</span></p>
+</div>
+
+<div class="divider"></div>
+
+<p>
+Dil se chaha ki is pavitra pal ka<br>
+main bhi hissa ban sakun 🙏
+</p>
+
+<h2>Ek chhota sa sawal… ❤️</h2>
+
+<p>
+Kya aaj main aapka<br>
+<b>Satyanarayan Puja Partner</b><br>
+ban sakta hoon?
+</p>
+
+<p>
+Aur meri family bhi<br>
+is puja me shamil ho sakti hai? ✨🙏
+</p>
+
+<div class="buttons">
+    <button class="yes" onclick="yesClick()">YES 🧡</button>
+    <button class="no" onmouseover="moveNo()">NO 😌</button>
+</div>
+
+<div id="yesMsg" class="message">
+    <p class="emoji">🙏🌼🪔</p>
+    <p>
+        Aaj ka din aur bhi pavitra ho gaya 🙏<br>
+        Bhagwan Satyanarayan Ji ki kripa<br>
+        hum sab par bani rahe ✨
+    </p>
+</div>
+
+</div>
+
+<script>
+const whatsappNumber="91XXXXXXXXXX"; // APNA NUMBER
+
+function yesClick(){
+    document.getElementById("yesMsg").style.display="block";
+    const msg=`🙏 Satyanarayan Bhagwan Ji ki kripa se
+aaj ka din aur bhi pavitra ho gaya ❤️`;
+    setTimeout(()=>{
+        window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`,"_blank");
+    },1000);
+}
+
+function moveNo(){
+    const btn=document.querySelector(".no");
+    btn.style.transform=`translate(${Math.random()*200-100}px,${Math.random()*60-30}px)`;
+}
+
+/* 🌼 Flowers */
+for(let i=0;i<25;i++){
+    const f=document.createElement("div");
+    f.className="flower";
+    f.innerHTML="🌼";
+    f.style.left=Math.random()*100+"vw";
+    f.style.animationDuration=6+Math.random()*6+"s";
+    document.body.appendChild(f);
+}
+</script>
+
+</body>
+</html>
